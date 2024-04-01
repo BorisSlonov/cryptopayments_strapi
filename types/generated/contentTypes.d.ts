@@ -882,6 +882,29 @@ export interface ApiCookiesPolicyCookiesPolicy extends Schema.CollectionType {
   };
 }
 
+export interface ApiFaqFaq extends Schema.CollectionType {
+  collectionName: 'faqs';
+  info: {
+    singularName: 'faq';
+    pluralName: 'faqs';
+    displayName: 'faq';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    text: Attribute.Blocks;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::faq.faq', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::faq.faq', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPostPost extends Schema.CollectionType {
   collectionName: 'posts';
   info: {
@@ -996,6 +1019,7 @@ declare module '@strapi/types' {
       'api::aml-policy.aml-policy': ApiAmlPolicyAmlPolicy;
       'api::complaints-policy.complaints-policy': ApiComplaintsPolicyComplaintsPolicy;
       'api::cookies-policy.cookies-policy': ApiCookiesPolicyCookiesPolicy;
+      'api::faq.faq': ApiFaqFaq;
       'api::post.post': ApiPostPost;
       'api::privacy-policy.privacy-policy': ApiPrivacyPolicyPrivacyPolicy;
       'api::terms-of-service.terms-of-service': ApiTermsOfServiceTermsOfService;
