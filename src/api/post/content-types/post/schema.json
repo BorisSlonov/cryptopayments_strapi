@@ -21,9 +21,6 @@
     "date": {
       "type": "date"
     },
-    "text": {
-      "type": "richtext"
-    },
     "img": {
       "type": "media",
       "multiple": false,
@@ -39,11 +36,17 @@
       "type": "enumeration",
       "enum": [
         "News",
-        "Article"
+        "Article",
+        "Events",
+        "Explainers",
+        "Articles"
       ]
     },
     "slug": {
       "type": "uid"
+    },
+    "text": {
+      "type": "blocks"
     }
   }
 }

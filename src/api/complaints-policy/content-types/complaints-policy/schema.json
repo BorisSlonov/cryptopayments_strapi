@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaints_policies",
+  "info": {
+    "singularName": "complaints-policy",
+    "pluralName": "complaints-policies",
+    "displayName": "Complaints Policy"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    }
+  }
+}
