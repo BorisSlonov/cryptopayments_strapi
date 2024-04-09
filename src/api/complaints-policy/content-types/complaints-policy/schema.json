@@ -4,18 +4,27 @@
   "info": {
     "singularName": "complaints-policy",
     "pluralName": "complaints-policies",
-    "displayName": "Complaints Policy"
+    "displayName": "Complaints Policy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "pageTitle": {
       "type": "string"
     },
-    "text": {
-      "type": "blocks"
+    "pageDescr": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "accordeonContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "accordeon-content.accordeon-content"
     }
   }
 }

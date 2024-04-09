@@ -794,13 +794,19 @@ export interface ApiAmlPolicyAmlPolicy extends Schema.CollectionType {
     singularName: 'aml-policy';
     pluralName: 'aml-policies';
     displayName: 'AML Policy';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    text: Attribute.Blocks;
+    pageTitle: Attribute.String;
+    pageDescr: Attribute.RichText;
+    date: Attribute.Date;
+    accordeonContent: Attribute.Component<
+      'accordeon-content.accordeon-content',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -826,13 +832,19 @@ export interface ApiComplaintsPolicyComplaintsPolicy
     singularName: 'complaints-policy';
     pluralName: 'complaints-policies';
     displayName: 'Complaints Policy';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    text: Attribute.Blocks;
+    pageTitle: Attribute.String;
+    pageDescr: Attribute.RichText;
+    date: Attribute.Date;
+    accordeonContent: Attribute.Component<
+      'accordeon-content.accordeon-content',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -857,13 +869,19 @@ export interface ApiCookiesPolicyCookiesPolicy extends Schema.CollectionType {
     singularName: 'cookies-policy';
     pluralName: 'cookies-policies';
     displayName: 'Cookies Policy';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    text: Attribute.Blocks;
+    pageTitle: Attribute.String;
+    pageDescr: Attribute.RichText;
+    date: Attribute.Date;
+    accordeonContent: Attribute.Component<
+      'accordeon-content.accordeon-content',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -888,13 +906,19 @@ export interface ApiFaqFaq extends Schema.CollectionType {
     singularName: 'faq';
     pluralName: 'faqs';
     displayName: 'faq';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    text: Attribute.Blocks;
+    pageTitle: Attribute.String;
+    pageDescr: Attribute.RichText;
+    date: Attribute.Date;
+    accordeonContent: Attribute.Component<
+      'accordeon-content.accordeon-content',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -942,13 +966,19 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Schema.CollectionType {
     singularName: 'privacy-policy';
     pluralName: 'privacy-policies';
     displayName: 'Privacy Policy';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    text: Attribute.Blocks;
+    pageTitle: Attribute.String;
+    pageDescr: Attribute.RichText;
+    date: Attribute.Date;
+    accordeonContent: Attribute.Component<
+      'accordeon-content.accordeon-content',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -973,13 +1003,19 @@ export interface ApiTermsOfServiceTermsOfService extends Schema.CollectionType {
     singularName: 'terms-of-service';
     pluralName: 'terms-of-services';
     displayName: 'Terms of Service';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    text: Attribute.Blocks;
+    pageTitle: Attribute.String;
+    pageDescr: Attribute.RichText;
+    date: Attribute.Date;
+    accordeonContent: Attribute.Component<
+      'accordeon-content.accordeon-content',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

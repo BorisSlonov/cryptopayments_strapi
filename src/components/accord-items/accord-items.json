@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_accord_items_accord_items",
+  "info": {
+    "displayName": "accordItems"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "descr": {
+      "type": "richtext"
+    }
+  }
+}
