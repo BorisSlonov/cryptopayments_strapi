@@ -19,11 +19,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
-<<<<<<< HEAD
     "strapi-plugin-transformer": "^3.1.2",
-=======
     "sqlite": "^5.1.1",
->>>>>>> 3ce411e8abaf1acc240a66eed9f42146e01bf398
     "styled-components": "5.3.3"
   },
   "author": {
